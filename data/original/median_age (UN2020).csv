@@ -1,0 +1,204 @@
+Rank,Country/Region,Median age,Fertility rate,Life expectancy,Continent
+,,Years (2020),2015-20,2015-20,
+1,Japan,48.358,1.37,84.43,Asia
+2,Italy,47.288,1.33,83.28,Europe
+3,Martinique,47.032,1.88,82.27,North America
+4,Portugal,46.158,1.29,81.75,Europe
+5,Germany,45.744,1.59,81.1,Europe
+6,Greece,45.55,1.3,81.98,Europe
+7,Lithuania,45.051,1.67,75.65,Europe
+8,Spain,44.858,1.33,83.36,Europe
+9,"China, Hong Kong SAR",44.79,1.33,84.63,Asia
+10,Bulgaria,44.596,1.56,74.85,Europe
+11,Slovenia,44.539,1.6,81.08,Europe
+12,Puerto Rico,44.467,1.22,79.85,North America
+13,Croatia,44.291,1.45,78.25,Europe
+14,Latvia,43.941,1.72,75.05,Europe
+15,Republic of Korea,43.734,1.11,82.77,Asia
+16,Guadeloupe,43.698,2.17,81.84,North America
+17,Austria,43.483,1.53,81.35,Europe
+18,Hungary,43.336,1.49,76.63,Europe
+19,Netherlands,43.314,1.66,82.06,Europe
+20,Czechia,43.203,1.64,79.15,Europe
+21,Romania,43.171,1.62,75.83,Europe
+22,Finland,43.128,1.53,81.64,Europe
+23,Bosnia and Herzegovina,43.108,1.27,77.18,Europe
+24,Switzerland,43.053,1.54,83.56,Europe
+25,Malta,42.596,1.45,82.29,Europe
+26,United States Virgin Islands,42.583,2.05,80.32,North America
+27,Channel Islands,42.552,1.5,82.84,Europe
+28,"China, Taiwan Province of China",42.455,1.15,80.19,Asia
+29,Estonia,42.424,1.59,78.46,Europe
+30,France,42.338,1.85,82.46,Europe
+31,Denmark,42.298,1.76,80.68,Europe
+32,Singapore,42.226,1.21,83.39,Asia
+33,Cuba,42.211,1.62,78.69,North America
+34,Belgium,41.928,1.71,81.39,Europe
+35,Poland,41.678,1.42,78.46,Europe
+36,Serbia,41.575,1.46,75.77,Europe
+37,Curaçao,41.561,1.76,78.63,North America
+38,Slovakia,41.249,1.5,77.31,Europe
+39,Ukraine,41.178,1.44,71.82,Europe
+40,Canada,41.124,1.53,82.22,North America
+41,Sweden,41.078,1.85,82.57,Europe
+42,Aruba,41.034,1.9,76.08,North America
+43,Barbados,40.493,1.62,79.02,North America
+44,United Kingdom,40.467,1.75,81.15,Europe
+45,Belarus,40.335,1.71,74.49,Europe
+46,Thailand,40.102,1.53,76.83,Asia
+47,Norway,39.836,1.68,82.18,Europe
+48,Luxembourg,39.729,1.45,82,Europe
+49,Russian Federation,39.586,1.82,72.29,Europe
+50,"China, Macao SAR",39.267,1.2,84.04,Asia
+51,North Macedonia,39.138,1.5,75.6,Europe
+52,Montenegro,38.8,1.75,76.65,Europe
+53,China,38.422,1.69,76.62,Asia
+54,United States of America,38.308,1.78,78.81,North America
+55,Georgia,38.268,2.06,73.52,Asia
+56,Ireland,38.246,1.84,82.05,Europe
+57,New Zealand,37.973,1.9,82.06,Oceania
+58,Australia,37.875,1.83,83.2,Oceania
+59,Republic of Moldova,37.597,1.26,71.68,Europe
+60,Iceland,37.491,1.77,82.77,Europe
+61,Mauritius,37.457,1.39,74.76,Africa
+62,Cyprus,37.25,1.34,80.75,Asia
+63,Kuwait,36.781,2.1,75.33,Asia
+64,Albania,36.399,1.62,78.38,Europe
+65,Trinidad and Tobago,36.176,1.73,73.31,North America
+66,Réunion,35.895,2.27,80.03,Africa
+67,Uruguay,35.76,1.98,77.7,South America
+68,Armenia,35.374,1.76,74.87,Asia
+69,Chile,35.339,1.65,79.96,South America
+70,Dem. People's Republic of Korea,35.338,1.91,71.96,Asia
+71,Saint Lucia,34.495,1.44,75.99,North America
+72,Seychelles,34.181,2.46,73.29,Africa
+73,Antigua and Barbuda,33.976,2,76.82,North America
+74,Sri Lanka,33.95,2.21,76.73,Asia
+75,New Caledonia,33.616,1.97,77.28,Oceania
+76,French Polynesia,33.596,1.95,77.38,Oceania
+77,Brazil,33.481,1.74,75.56,South America
+78,Costa Rica,33.462,1.76,80,North America
+79,Saint Vincent and the Grenadines,32.894,1.9,72.36,North America
+80,Tunisia,32.835,2.2,76.41,Africa
+81,United Arab Emirates,32.621,1.42,77.75,Asia
+82,Viet Nam,32.49,2.06,75.27,Asia
+83,Bahrain,32.456,2,77.1,Asia
+84,Azerbaijan,32.333,2.08,72.81,Asia
+85,Brunei Darussalam,32.308,1.85,75.66,Asia
+86,Qatar,32.264,1.88,80.02,Asia
+87,Bahamas,32.25,1.76,73.73,North America
+88,Grenada,31.982,2.07,72.39,North America
+89,Iran (Islamic Republic of),31.972,2.15,76.35,Asia
+90,Saudi Arabia,31.797,2.34,74.9,Asia
+91,Turkey,31.549,2.08,77.31,Asia
+92,Argentina,31.532,2.27,76.45,South America
+93,Guam,31.373,2.32,79.77,Oceania
+94,Colombia,31.307,1.82,77.02,South America
+95,Peru,30.984,2.27,76.41,South America
+96,Jamaica,30.725,1.99,74.33,North America
+97,Kazakhstan,30.682,2.76,73.23,Asia
+98,Oman,30.604,2.93,77.53,Asia
+99,Israel,30.484,3.04,82.74,Asia
+100,Malaysia,30.262,2.01,75.93,Asia
+101,Maldives,29.906,1.88,78.47,Asia
+102,Indonesia,29.744,2.32,71.41,Asia
+103,Panama,29.677,2.47,78.24,North America
+104,Venezuela (Bolivarian Republic of),29.592,2.28,72.13,South America
+105,Lebanon,29.563,2.09,78.82,Asia
+106,Morocco,29.538,2.42,76.33,Africa
+107,Mexico,29.171,2.14,74.98,North America
+108,Suriname,28.988,2.43,71.49,South America
+109,Myanmar,28.983,2.17,66.76,Asia
+110,Libya,28.817,2.25,72.7,Africa
+111,Algeria,28.521,3.05,76.59,Africa
+112,India,28.426,2.24,69.27,Asia
+113,Western Sahara,28.424,2.41,69.86,Africa
+114,Mongolia,28.181,2.9,69.55,Asia
+115,Bhutan,28.144,2,71.28,Asia
+116,Dominican Republic,28.002,2.36,73.81,North America
+117,Fiji,27.93,2.79,67.27,Oceania
+118,Ecuador,27.93,2.44,76.7,South America
+119,Uzbekistan,27.809,2.43,71.53,Asia
+120,South Africa,27.621,2.41,63.62,Africa
+121,Cabo Verde,27.604,2.29,72.7,Africa
+122,Bangladesh,27.567,2.05,72.15,Asia
+123,El Salvador,27.552,2.05,72.99,North America
+124,Turkmenistan,26.937,2.79,67.98,Asia
+125,Guyana,26.687,2.47,69.71,South America
+126,Djibouti,26.57,2.76,66.54,Africa
+127,Nicaragua,26.464,2.42,74.15,North America
+128,Paraguay,26.308,2.45,74.08,South America
+129,Kyrgyzstan,26.034,3,71.18,Asia
+130,Philippines,25.687,2.58,71.04,Asia
+131,Cambodia,25.631,2.52,69.44,Asia
+132,Syrian Arab Republic,25.621,2.84,71.32,Asia
+133,Bolivia (Plurinational State of),25.56,2.75,71.08,South America
+134,Belize,25.482,2.32,74.37,North America
+135,French Guiana,25.081,3.36,79.73,South America
+136,Nepal,24.633,1.93,70.31,Asia
+137,Egypt,24.606,3.33,71.74,Africa
+138,Lao People's Democratic Republic,24.37,2.7,67.44,Asia
+139,Micronesia (Fed. States of),24.362,3.08,67.7,Oceania
+140,Honduras,24.344,2.49,74.99,North America
+141,Botswana,24.044,2.89,69.1,Africa
+142,Lesotho,24.01,3.16,53.51,Africa
+143,Haiti,24.008,2.96,63.52,North America
+144,Jordan,23.771,2.77,74.33,Asia
+145,Kiribati,23.04,3.58,67.99,Oceania
+146,Guatemala,22.881,2.9,73.94,North America
+147,Pakistan,22.782,3.55,67.02,Asia
+148,Gabon,22.511,4,66.06,Africa
+149,Papua New Guinea,22.422,3.59,64.15,Oceania
+150,Tajikistan,22.416,3.61,70.77,Asia
+151,Tonga,22.415,3.58,70.74,Oceania
+152,Equatorial Guinea,22.335,4.55,58.25,Africa
+153,Samoa,21.835,3.9,73.11,Oceania
+154,Namibia,21.832,3.42,63.02,Africa
+155,Ghana,21.507,3.89,63.65,Africa
+156,Vanuatu,21.112,3.8,70.25,Oceania
+157,Iraq,21.04,3.68,70.37,Asia
+158,Timor-Leste,20.795,4.1,69.15,Asia
+159,State of Palestine,20.769,3.67,73.82,Asia
+160,Eswatini,20.729,3.03,59.31,Africa
+161,Comoros,20.37,4.24,63.98,Africa
+162,Yemen,20.221,3.84,66.03,Asia
+163,Kenya,20.119,3.52,66.18,Africa
+164,Mauritania,20.114,4.59,64.61,Africa
+165,Mayotte,20.073,3.73,79.35,Africa
+166,Rwanda,20.039,4.1,68.44,Africa
+167,Solomon Islands,19.889,4.44,72.77,Oceania
+168,Sudan,19.659,4.43,64.95,Africa
+169,Madagascar,19.568,4.11,66.49,Africa
+170,Ethiopia,19.466,4.3,65.97,Africa
+171,Liberia,19.411,4.35,63.6,Africa
+172,Sierra Leone,19.402,4.32,54.07,Africa
+173,Togo,19.35,4.35,60.53,Africa
+174,Eritrea,19.209,4.1,65.74,Africa
+175,Congo,19.204,4.45,64.16,Africa
+176,South Sudan,19.04,4.74,57.43,Africa
+177,Côte d'Ivoire,18.854,4.68,57.25,Africa
+178,Guinea-Bissau,18.833,4.51,57.82,Africa
+179,Benin,18.781,4.87,61.3,Africa
+180,Cameroon,18.688,4.6,58.77,Africa
+181,Zimbabwe,18.668,3.63,60.83,Africa
+182,Sao Tome and Principe,18.612,4.35,70.05,Africa
+183,Senegal,18.514,4.65,67.47,Africa
+184,Afghanistan,18.438,4.56,64.28,Asia
+185,Malawi,18.08,4.25,63.43,Africa
+186,Nigeria,18.064,5.42,54.18,Africa
+187,Guinea,18.02,4.74,61.04,Africa
+188,United Republic of Tanzania,17.992,4.92,64.84,Africa
+189,Gambia,17.844,5.25,61.54,Africa
+190,Mozambique,17.62,4.89,60.05,Africa
+191,Central African Republic,17.611,4.75,52.67,Africa
+192,Zambia,17.592,4.66,63.26,Africa
+193,Burkina Faso,17.551,5.23,60.92,Africa
+194,Burundi,17.32,5.45,61.03,Africa
+195,Democratic Republic of the Congo,16.988,5.96,60.21,Africa
+196,Uganda,16.733,5.01,62.76,Africa
+197,Somalia,16.683,6.12,56.94,Africa
+198,Angola,16.677,5.55,60.54,Africa
+199,Chad,16.554,5.8,53.8,Africa
+200,Mali,16.347,5.92,58.71,Africa
+201,Niger,15.151,6.95,61.8,Africa
+,World,30.904,2.47,72.28,

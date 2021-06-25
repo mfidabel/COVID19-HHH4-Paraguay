@@ -12,7 +12,7 @@ source("R/functions.R")
 counts <- readRDS("data/processed/daily_cases.rds")
 
 # Shapefile for Africa
-africa <- st_read("data/processed/geodata/samerica.gpkg") 
+samerica <- st_read("data/processed/geodata/samerica.gpkg") 
 
 ## Weather
 #weather_clean <- readr::read_csv("data/original/AfricaCountries_2020-12-08_ALLEXTRACTEDDATA.csv")
@@ -55,7 +55,8 @@ map_adjmat <- poly2adjmat(map)
 map_nbOrder <- nbOrder(map_adjmat, maxlag = Inf)
 
 epi_sts <- sts(observed = counts,
-               start = c(2020, 23),
+               #start = c(2020, 23),
+               start = c(lubridate::year(as.Date(rownames(counts)[1])), lubridate::yday(as.Date(rownames(counts)[1]))),
                frequency = 365,
                population = samerica$Pop2020 / sum(samerica$Pop2020),
                neighbourhood = map_nbOrder,
@@ -228,7 +229,7 @@ ggsave("figs/figureS10B.pdf", width = 7, height = 5)
 
 
 # LAGGED POISSON WITH AND WITHOUT RE WITH OPTIMAL NUMBER OF LAGS  
-lag_optimal <- 8
+lag_optimal <- 7
 f_end <- ~ 1 
 f_ar <- ~ 1 + log(pop) + HDI_cat + sindex_lag + testing_lag + vax_lag
 f_ne <- ~ 1 + log(pop) + HDI_cat + sindex_lag + testing_lag + vax_lag

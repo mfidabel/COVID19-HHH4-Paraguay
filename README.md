@@ -1,7 +1,5 @@
 # Tracking and predicting the South American COVID-19 pandemic
 
-
-
 This code was tested with R version 3.6.3 on Ubuntu 18.04 LTS and Windows and version 4.0.2 on Mac OS
 
 Set the working directory to the one with these source files, and run these files:
@@ -17,5 +15,4 @@ Set the working directory to the one with these source files, and run these file
 - `03_figures_aux.R`: use processed data and fitted model to create other figures in the `figs` folder.
 
 The `R` folder contains the `functions.R` file that has a set of costum functions needed to run the code.
-
 
