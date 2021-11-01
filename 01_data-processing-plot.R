@@ -16,7 +16,6 @@ policy <- readr::read_csv("data/original/OxCGRT_latest.csv")
 
 # DATA PREPARATION -------------------------------------------------------------
 
-
 cases <- cases %>% 
   select(-`Province/State`, -Lat, -Long) %>% 
   rename(country = `Country/Region`) %>% 

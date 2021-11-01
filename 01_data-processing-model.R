@@ -6,7 +6,8 @@ pacman::p_load(pkgs, character.only = T)
 # LOAD DATA --------------------------------------------------------------------
 
 # Cases at country level  (JHU data)
-cases <- readr::read_csv("data/original/time_series_covid19_confirmed_global.csv")
+cases <- readr::read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv")
+readr::write_csv(cases, "data/original/cases_raw.csv")
 
 # Shapefile for South America
 samerica <- st_read("data/original/geodata/vc965bq8111.shp") 
@@ -20,7 +21,8 @@ samerica <- samerica[order(samerica$name), ]
 
 
 # Policy index
-policy <- readr::read_csv("data/original/OxCGRT_latest.csv")
+policy <- readr::read_csv("https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv")
+readr::write_csv(policy, "data/original/policy_raw.csv")
 
 # Vaccine Data
 vaccines <- readr::read_csv("data/original/vaccinations.csv")
