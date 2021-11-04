@@ -10,9 +10,11 @@ cases <- readr::read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID
 readr::write_csv(cases, "data/original/cases_raw.csv")
 
 # Shapefile for South America
-samerica <- st_read("data/original/geodata/vc965bq8111.shp") 
+#samerica <- st_read("data/original/geodata/vc965bq8111.shp") 
+samerica <- st_read("data/original/South_America/South_America.shp")
 samerica$name = stringr::str_to_title(samerica$name)
 samerica <- samerica %>%
+  rename(name = COUNTRY) %>%
   select(name,geometry) %>%
   mutate(name = case_when(
     name == "French Guiana (France)" ~ "French Guiana",
@@ -51,8 +53,8 @@ vax_interp[,i] = tmp$y
 #HDI Data
 HDI <- readr::read_csv("data/original/Human Development Index (HDI).csv")
 HDI <- HDI %>%
-  rename(name = X2, 
-         HDI = X3) %>%
+  rename(name = "...2", 
+         HDI = "...3") %>%
 select(name, HDI) %>%
   mutate(name = case_when(
     name == "Venezuela (Bolivarian Republic of)" ~ "Venezuela",
@@ -66,8 +68,8 @@ HDI$HDI = as.numeric(HDI$HDI)
 #Population Data
 Pop2020 <- readr::read_csv("data/original/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES_SAMERICA.csv")
 Pop2020 <- Pop2020 %>%
-  rename(name = X3, 
-         Pop2020 = X8) %>%
+  rename(name = "...3", 
+         Pop2020 = "...8") %>%
   select(name, Pop2020) %>%
   mutate(name = case_when(
     name == "Venezuela (Bolivarian Republic of)" ~ "Venezuela",
@@ -96,6 +98,10 @@ Age$Age = as.numeric(Age$Age)
 # Remove Countries from shape file (Islands, and French Guiana, which is  not contained in the policy file)
 countries_to_remove <-  c("Falkland Islands (Islas Malvinas) (Uk)", "In Dispute Brazil/Uruguay", "Curacao (Neth)", "South Georgia & The South Sandwich Islands (Uk)",
                           "Bonaire (Neth)","Trinidad & Tobago","Aruba (Neth)","French Guiana")
+
+countries_to_remove <-  c("Falkland Islands (Islas Malvinas) (Uk)", "In Dispute Brazil/Uruguay", "Curacao (Neth)", "South Georgia & The South Sandwich Islands (Uk)",
+                          "Bonaire (Neth)","Trinidad & Tobago","Aruba (Neth)","French Guiana", "South Georgia and the South Sandwich Is (UK)", 
+                          "Falkland Islands (UK)")
 
 samerica <- samerica[!(samerica$name %in% countries_to_remove), ] 
 
