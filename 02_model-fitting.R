@@ -105,6 +105,8 @@ mage <- matrix(samerica$Age, ncol = ncol(epi_sts), nrow = nrow(epi_sts),
 #             ncol = ncol(epi_sts), nrow = nrow(epi_sts),
 #             byrow = T)
 
+library(xts)
+vax <- xts(vax[,], order.by=as.Date(rownames(vax)))
 # Lag time varying variables
 k <- 7
 sindex_lag <- xts::lag.xts(sindex, k = 7)
@@ -117,7 +119,7 @@ vax_lag <- xts::lag.xts(vax,k=7)
 # MODEL ------------------------------------------------------------------------
 
 # Days used to conduct inference
-days_for_inferece <- 90
+days_for_inferece <- 30
 days_to_predict <- 7
 fit_start <- nrow(epi_sts) - days_to_predict - days_for_inferece
 fit_end <- nrow(epi_sts) - days_to_predict

@@ -212,6 +212,32 @@ rownames(sindex) <- unique(as.character(policy_clean$date))
 
 # See what the common dates are for the time varying datasets and censor
 # accordingly 
+# final_dates <- Reduce(intersect, list(rownames(counts), 
+#                                       rownames(sindex),
+#                                       rownames(vax_interp)))
+final_dates <- Reduce(intersect, list(rownames(counts), 
+                                      rownames(sindex)))
+
+# añadir al inicio filas de 0 a vax_interp, para completar las fechas iniciales
+# y poder procesar con más fechas y no limitarse sólo a las fechas que contiene
+# el .csv de vacunación
+actual <- final_dates[1]
+fin <- rownames(vax_interp)[1]
+i <- 1
+while(actual != fin)
+{
+  nueva_fila <- data.frame(matrix(ncol=12, nrow=0))
+  nueva_fila[actual,] <- vax_interp[rownames(vax_interp)==fin,]
+  colnames(nueva_fila) <- colnames(vax_interp)
+  
+  vax_interp <- rbind(vax_interp, nueva_fila)
+  
+  i <- i+1
+  actual <- final_dates[i]
+}
+# ordenar ascendentemente por fecha
+vax_interp <- vax_interp[order(row.names(vax_interp)),]
+
 final_dates <- Reduce(intersect, list(rownames(counts), 
                                       rownames(sindex),
                                       rownames(vax_interp)))
