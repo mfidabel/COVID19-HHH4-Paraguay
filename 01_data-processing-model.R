@@ -12,7 +12,7 @@ readr::write_csv(cases, "data/original/cases_raw.csv")
 # Shapefile for South America
 #samerica <- st_read("data/original/geodata/vc965bq8111.shp") 
 samerica <- st_read("data/original/South_America/South_America.shp")
-samerica$name = stringr::str_to_title(samerica$name)
+samerica$COUNTRY = stringr::str_to_title(samerica$COUNTRY)
 samerica <- samerica %>%
   rename(name = COUNTRY) %>%
   select(name,geometry) %>%
@@ -218,9 +218,9 @@ rownames(sindex) <- unique(as.character(policy_clean$date))
 final_dates <- Reduce(intersect, list(rownames(counts), 
                                       rownames(sindex)))
 
-# añadir al inicio filas de 0 a vax_interp, para completar las fechas iniciales
-# y poder procesar con más fechas y no limitarse sólo a las fechas que contiene
-# el .csv de vacunación
+# aÃ±adir al inicio filas de 0 a vax_interp, para completar las fechas iniciales
+# y poder procesar con mÃ¡s fechas y no limitarse sÃ³lo a las fechas que contiene
+# el .csv de vacunaciÃ³n
 actual <- final_dates[1]
 fin <- rownames(vax_interp)[1]
 i <- 1
