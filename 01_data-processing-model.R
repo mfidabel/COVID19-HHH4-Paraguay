@@ -229,8 +229,8 @@ actual <- final_dates[1]
 fin <- rownames(vax_interp)[1]
 i <- 1
 
-fila_ceros <- data.frame(matrix(ncol=length(paises), nrow=0))
-fila_ceros[actual,] <- rep(0:0, times=length(paises))
+fila_ceros <- data.frame(matrix(ncol=12, nrow=0))
+fila_ceros[actual,] <- rep(0:0, times=12)
 
 if ( all(vax_interp[fin,]== fila_ceros) ) # comprobar que toda la primera fila sea 0 antes de hacer los cambios
 {
